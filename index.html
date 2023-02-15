@@ -82,8 +82,11 @@
                 if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'wuff' && userWuffed == false) { // Hurray you found some easter eggs🐰🥚
                     wuff = "Imitation is the sincerest form of flattery that mediocrity can pay to greatness.";
                     userWuffed = true;
-                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a cat" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a cat") {
-                    wuff = "Woof?";
+                }else if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'wo bwl'){
+                    wuff = "Dies ist wohl war eine sehr gute Frage, leider kann selbst ich diese Frage nicht adequat beantworten. Ich müsste Sie da an Herrn **** weiterleiten!"
+                }
+                else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a cat" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a cat") {
+                    wuff = "Miau";
                 } else {
                     var numberOfWuff = Math.floor(Math.random() * 15); // Random number of wuff between 0 and 14.
                     var wuff = "Wuff"; // Always start with 1 capitalized meow
